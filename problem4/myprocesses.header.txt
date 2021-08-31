@@ -1,0 +1,6 @@
+# My processes
+root     172589   2198  0 19:25 ?        00:00:01 sshd: rayyala [priv]
+rayyala  172598 172589  0 19:26 ?        00:00:00 sshd: rayyala@pts/9
+rayyala  172599 172598  0 19:26 pts/9    00:00:00 -bash
+rayyala  173214 172599  0 19:34 pts/9    00:00:00 ps -ef
+rayyala  173215 172599  0 19:34 pts/9    00:00:00 grep --color=auto rayyala

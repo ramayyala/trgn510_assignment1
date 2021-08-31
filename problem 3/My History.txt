@@ -1,0 +1,200 @@
+    1  mkdir TRGN514
+    2  cd TRGN514/
+    3  mkdir Activity_1
+    4  sbatch
+    5  module
+    6  module available
+    7  module list
+    8  exit
+    9  ls
+   10  exit
+   11  ls
+   12  mkdir TRGN510
+   13  mv assignments/ TRGN510
+   14  ls
+   15  mv bin TRGN510
+   16  mv projects/ TRGN510
+   17  mv scripts/ TRGN510
+   18  ls
+   19  exit
+   20  passwd
+   21  ls
+   22  mkdir bin
+   23  mkdir scripts
+   24  mkdir projects
+   25  ls
+   26  mkdir assignments
+   27  cd assignments/
+   28  ls
+   29  mkdir trgn_assignment1
+   30  cd trgn_assignment1/
+   31  ;s
+   32  ls
+   33  echo "#trgn510_assignment1" >> README.md
+   34  git init
+   35  git add README.md
+   36  git commit -m "first commit"
+   37  git config --global user.email ramayyala@gmail.com
+   38  git config --global user.name Ram Ayyala
+   39  git commit -m "first commit"
+   40  git remote add origin https://github.com/davcraig75/trgn510_assignment1.git
+   41  ls
+   42  cd ..
+   43  ls
+   44  rm -rf trgn_assignment1/
+   45  ls
+   46  cd TRGN510
+   47  ls
+   48  wget http://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/Homo_sapiens.GRCh37.75.gtf.gz
+   49  la
+   50  gunzip Homo_sapiens.GRCh37.75.gtf.gz 
+   51  less Homo_sapiens.GRCh37.75.gtf 
+   52  !
+   53  cut -f3 Homo_sapiens.GRCh37.75.gtf | head
+   54  awk '$3 ~ /gene/ { print $2,$1,$4,$5}' Homo_sapiens.GRCh37.75.gtf | head
+   55  awk '$3 ~ /gene/ { print $2,$1,$4,$5}' Homo_sapiens.GRCh37.75.gtf | head | sed 's/ /,/g'
+   56  ls
+   57  cd ..
+   58  ls
+   59  cd TRGN514/
+   60  ls
+   61  cd Activity_1/
+   62  ls
+   63  vi heartrates.txt
+   64  pwd
+   65  exit
+   66  cd TRGN510/
+   67  ls
+   68  awk '$3 ~ /gene/ { print $2,$1,$4,$5}' Homo_sapiens.GRCh37.75.gtf | head
+   69  awk '$3 ~ /gene/ { print $2,$1,$4,$5}' Homo_sapiens.GRCh37.75.gtf | head | sed 's/ /,/g'
+   70  awk '$3 ~ /gene/ { print $2,$1,$4,$5}' Homo_sapiens.GRCh37.75.gtf | sed 's/ /,/g' &amp;gt; gene_dist.csv
+   71  ls
+   72  awk '$3 ~ /gene/ { print $2,$1,$4,$5}' Homo_sapiens.GRCh37.75.gtf | sed 's/ /,/g' > gene_dist.csv
+   73  sed -e "1ifeature,chr,start,end" gene_dist.csv > gene_dist_head.csv
+   74  ls -l
+   75  less gene_dist_head.csv 
+   76  ls
+   77  cd TRGN510
+   78  ls
+   79  rm -rf gene_dist*
+   80  ls
+   81  rm -rf Homo_sapiens.GRCh37.75.gtf 
+   82  ls
+   83  rm -rf assignments/
+   84  ls
+   85  mv * ../
+   86  ld
+   87  ls
+   88  cd ..
+   89  ls
+   90  tree ~
+   91  rm -rf TRGN510
+   92  ls
+   93  tree ~
+   94  ls
+   95  mkdir TRG510
+   96  ls
+   97  cd TRG510/
+   98  ls
+   99  cd ..
+  100  ls
+  101  mv bin/ TRG510/
+  102  mv projects/ TRG510/
+  103  mv scripts/ TRG510/
+  104  ls
+  105  mv TRG510 TRGN510
+  106  ls
+  107  cd TRGN510/
+  108  ls
+  109  mkdir assignments
+  110  cd assignments/
+  111  ls
+  112  git clone https://github.com/ramayyala/trgn510_assignment1.git
+  113  ls
+  114  cd trgn510_assignment1/
+  115  ls
+  116  git congif
+  117  git
+  118  ls
+  119  vi Readme.md
+  120  ks
+  121  ls
+  122  git add . -A
+  123  git commit -m "First commit"
+  124  git push
+  125  mkdir problem1
+  126  history
+  127  ls
+  128  cd problem1/
+  129  ls
+  130  history > myhistory.txt
+  131  ls
+  132  ls -l
+  133  mv myhistory.txt myhistory.problem1.txt
+  134  ls
+  135  cat myhistory.problem1.txt 
+  136  cd ..
+  137  ls
+  138  mkdir problem2
+  139  cp /data/bashrc_sample problem2/
+  140  ls
+  141  cd problem2
+  142  ls
+  143  vi bashrc_sample 
+  144  exit
+  145  ls
+  146  cd TRGN510/
+  147  ls
+  148  cd assignments/
+  149  ls
+  150  cd trgn510_assignment1/
+  151  ls
+  152  cd problem2/
+  153  ls
+  154  vi bashrc_sample 
+  155  source bashrc_sample 
+  156  ls
+  157  cp bashrc_sample ~/.bashrc 
+  158  exit
+  159  cp /home/data/vimrc TRGN510/assignments/trgn_assignment1/problem2/
+  160  cp /home/data/vimrc TRGN510/assignments/trgn510_assignment1/problem2/
+  161  ls
+  162  cd TRGN510/
+  163  ls
+  164  cd assignments/
+  165  ls
+  166  cd trgn510_assignment1/
+  167  ls
+  168  cd problem2
+  169  ls
+  170  vi vimrc 
+  171  cp vimrc ~/.vimrc
+  172  vi ~/.vimrc 
+  173  ls
+  174  cd ..
+  175  ls
+  176  mkdir problem3
+  177  cd problem3/
+  178  ls
+  179  cd ..
+  180  ls
+  181  mv problem3 problem 3
+  182  ls
+  183  rm -rf problem3/
+  184  mkdir problem 3
+  185  ls
+  186  rm -rf 3/
+  187  rm -rf problem
+  188  ls
+  189  mkdir "problem 3"
+  190  ls
+  191  ls- ;l
+  192  ls -l
+  193  cd problem 3/
+  194  ls
+  195  cd ..
+  196  ls
+  197  cd "problem 3"
+  198  ls
+  199  vi "My History.txt"
+  200  history > "My History.txt"
